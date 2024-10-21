@@ -13,24 +13,6 @@ html {
   padding: 0;
 }
 
-/*------------------------Scroll Bar-----------------------*/
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #66A1F3;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #66A1F3;
-}
 
 /*========================Nav Bar=========================*/
 .nav-bar {
@@ -47,13 +29,13 @@ html {
   z-index: 1;
 }
 
-.logo {
+/* .logo {
   flex: 1;
   font-size: 40px;
   padding: 20px;
   margin-left: 50px;
   font-family: Satisfy;
-}
+} */
 
 ul.menu {
   flex: 1;
@@ -523,21 +505,6 @@ ul.menu {
   }
 }
 
- /* .header-area  {
-  background-color: #66A1F3;
-  background: url('../images/travel.avif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  width: 100%;
-  height: 50vh;
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .header-area .menu-area {
   position: center;
   display: flex;
@@ -626,10 +593,16 @@ ul.menu {
   margin: 0;
   margin-bottom: 20px;
 }
+.header-area .header-content b{
+color: #66A1F3;
+-webkit-text-stroke: 0.1px black; 
+padding-bottom: 50px;
+
+}
 
 .header-area .header-content {
 text-align: center;
-padding-top: 50px;
+padding-top: 150px;
 }
 
 .header-area .header-content p{
@@ -665,4 +638,58 @@ transition: all .6s;
 .header-area .button a:hover{
   background: #FF8C00;
 color: #ffffff;
+}
+
+/* Locations */
+.package-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 0 auto;
+  /* align-items: center; Vertically centers the content if needed */
+  /* height: 100px;  */
+}
+
+.location-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col-content {
+  position: relative;
+  filter: brightness(95%);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.col-content img {
+  margin-bottom: 10px;
+  height: 300px;
+  border-radius: 27px;
+  width: 100%;
+}
+
+.col-content h5 {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  font-weight: 800;
+  left: 10px;
+  bottom: 265px;
+  cursor: pointer;
+}
+
+.col-content p {
+  position: absolute;
+  font-size: 13px;
+  color: black;
+  font-weight: 700;
+  left: 0px;
+  bottom: 225px;
+  cursor: pointer;
+}
+
+.col-content:hover {
+  filter: brightness(120%);
+  transform: scale(1.03);
+  cursor: pointer;
 }

@@ -10,7 +10,7 @@ h2{
 	font-size:23px;
 }
 /*------------------------Scroll Bar-----------------------*/
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 20px;
   }
   
@@ -26,7 +26,7 @@ h2{
   
   ::-webkit-scrollbar-thumb:hover {
 	background-color: #66A1F3;
-  }
+  } */
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 ``````````````````````````
@@ -190,10 +190,16 @@ h2{
     margin: 0;
     margin-bottom: 20px;
 }
+.header-area .header-content b{
+	color: #66A1F3;
+	-webkit-text-stroke: 0.1px black; 
+	padding-bottom: 50px;
+
+}
 
 .header-area .header-content {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 150px;
 }
 
 .header-area .header-content p{

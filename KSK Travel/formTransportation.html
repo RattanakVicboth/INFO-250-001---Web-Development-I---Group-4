@@ -10,86 +10,97 @@
     <link rel="stylesheet" href="css/transportation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap">
 </head>
-<br>
-<br>
-<h1><b> BOOKING TRANSPORTATION</b></h1>
-<br>
-<br>
-<div class="main">
-	<main class="app">
-		<div class="screen-wrap">
-			<section class="screen-home">
-				<div class="screen-home__form-wrap">
-					<div class="screen-home__form">
-						<form>
-							<div id="formdetail">
-								<div class="screen-home__location">
-									<div class="lable">
-										<figure class="icon"><img src="https://i.ibb.co/KwnYdXN/location.png"></figure>
-										<span class="text">Location Details</span>
-									</div>
-									<div class="input-wrap">
-										<div class="inside-wrap">
-											<div class="rotate-btn">
-												<figure>
-													<img src="https://i.ibb.co/HPBrQkn/rotate-btn.png">
-												</figure>
-											</div>
-											<div class="from">
-												<span class="inside-lable">From</span>
-												<input class="input" type="" name="" value="Wat Phnom">
-											</div>
-											<div class="to">
-												<span class="inside-lable">To</span>
-												<input class="input" type="" name="" value="Up KP">
-											</div>
+<body>
+    <h1><b> BOOKING TRANSPORTATION</b></h1>
+    <div class="main">
+        <main class="app">
+            <div class="screen-wrap">
+                <section class="screen-home">
+                    <div class="screen-home__form-wrap">
+                        <div class="screen-home__form">
+                            <form>
+                                <div id="formdetail">
+                                    <div class="screen-home__location">
+                                        <div class="lable">
+                                            <figure class="icon"><img src="https://i.ibb.co/KwnYdXN/location.png"></figure>
+                                            <span class="text">Location Details</span>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <div class="inside-wrap">
+                                                <div class="rotate-btn">
+                                                    <figure><img src="https://i.ibb.co/HPBrQkn/rotate-btn.png"></figure>
+                                                </div>
+                                                <div class="from">
+													<span class="inside-lable">From</span>
+													<select class="input" name="from">
+														<option value=""></option>
+														<option value="Wat Phnom">Wat Phnom</option>
+														<option value="Royal Palace">Royal Palace</option>
+														<option value="Tuol Sleng Genocide Museum">Tuol Sleng Genocide Museum</option>
+														<option value="Choeung Ek Genocidal Center">Choeung Ek Genocidal Center</option>
+														<option value="Russian Market">Russian Market</option>
+														<option value="National Museum">National Museum</option>
+														<option value="Mekong River View">Mekong River View</option>
+														<option value="Bassac Lane">Bassac Lane</option>
+														<option value="AEON Mall Phnom Penh">AEON Mall Phnom Penh</option>
+														<option value="AEON Mall Sen Sok">AEON Mall Sen Sok</option>
+														<option value="Independence Monument">Independence Monument</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+													</select>
+												</div>
+												<div class="to">
+													<span class="inside-lable">To</span>
+													<select class="input" name="to">
+														<option value=""></option>
+														<option value="Up KP">Up KP</option>
+														<option value="ACE Lounge">ACE Lounge</option>
+														<option value="EDM Central Park">EDM Central Park</option>
+														<option value="Olympic Stadium">Olympic Stadium</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+														<option value="Central Market">Central Market</option>
+													</select>
+												</div>												
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="screen-home__date">
+										<div class="lable">
+											<figure class="icon"><img src="https://i.ibb.co/7N5zdnc/calendar.png"></figure>
+											<span class="text">Date Details</span>
 										</div>
-									</div>
-								</div>
-								<div class="screen-home__date">
-									<div class="lable">
-										<figure class="icon"><img src="https://i.ibb.co/7N5zdnc/calendar.png"></figure>
-										<span class="text">Date Details</span>
-									</div>
-									<div class="input-wrap">
-										<div class="inside-wrap">
-											<div class="onward">
-												<input class="input" type="" name="" value="10">
-												<div class="mon-day">
-													<span class="month">Dec</span>
-													<span class="day">Wed</span>
+										<div class="input-wrap">
+											<div class="inside-wrap">
+												<div class="onward">
+													<label for="onward-date">Onward</label>
+													<input id="onward-date" class="input" type="date" onchange="updateOnwardDate()">
+												</div>
+												<div class="return">
+													<label for="return-date">Return</label>
+													<input id="return-date" class="input" type="date" onchange="updateReturnDate()">
 												</div>
 											</div>
-											<div class="return">
-												<input class="input" type="" name="" value="12">
-												<div class="mon-day">
-													<span class="month">Dec</span>
-													<span class="day">Fri</span>
-												</div>
-											</div>
-										</div>
-										<div class="inside-lable-wrap">
-											<div class="inside-lable-col">
-												<span class="inside-lable">Onward</span>
-											</div>
-											<div class="inside-lable-col">
-												<span class="inside-lable">Return</span>
-											</div>
-										</div>
-									</div> 
-								</div>
-							</div>
-							<div class="screen-home__submit-wrap">
-								<span class="line"></span>
-								<div class="screen-home__bus-page" id="buspage">
-									<div class="screen-home__inside-wave">
-										
-									</div>
-									<figure class="screen-home__bus-arrow-wrap">
-										<a href="transportation.html"><img src="https://i.ibb.co/nQ4khG8/arrow.png"></a>
-									</figure>
-							</div>
-							
+										</div> 
+									</div>									
+                                </div>
+                                <div class="screen-home__submit-wrap">
+                                    <span class="line"></span>
+                                    <div class="screen-home__bus-page" id="buspage">
+                                        <div class="screen-home__inside-wave"></div>
+                                        <figure class="screen-home__bus-arrow-wrap">
+                                            <a href="transportation.html"><img src="https://i.ibb.co/nQ4khG8/arrow.png"></a>
+                                        </figure>
+									</div>							
 						</form>
 					</div>
 					<div class="screen-home__recent-search">
@@ -101,11 +112,28 @@
 							<ul class="screen-home__rs-row">
 								<li class="screen-home__rs-col">
 									<div class="screen-homers-from-to">
-										<span>Wat Phnom</span>
+										<select class="input" name="from">
+											<option value="Phnom Penh">Phnom Penh</option>
+										</select>
 										<span class="screen-home__rs-arrow"></span>
-										<span>ACE Lounge</span>
+										<select class="input" name="from">
+											<option value="Wat Phnom">Wat Phnom</option>
+											<option value="Royal Palace">Royal Palace</option>
+											<option value="Tuol Sleng Genocide Museum">Tuol Sleng Genocide Museum</option>
+											<option value="Choeung Ek Genocidal Center">Choeung Ek Genocidal Center</option>
+											<option value="Russian Market">Russian Market</option>
+											<option value="National Museum">National Museum</option>
+											<option value="Mekong River View">Mekong River View</option>
+											<option value="Bassac Lane">Bassac Lane</option>
+											<option value="AEON Mall Phnom Penh">AEON Mall Phnom Penh</option>
+											<option value="AEON Mall Sen Sok">AEON Mall Sen Sok</option>
+											<option value="Independence Monument">Independence Monument</option>
+											<option value="Central Market">Central Market</option>
+											<option value="Central Market">Central Market</option>
+											<option value="Central Market">Central Market</option>
+										</select>
 									</div>
-									<div class="screen-home__rs-date">05 / 12 / 2023</div>
+									<div class="screen-home__rs-date" id="recent-onward-date"></div>
 								</li>
 								<li class="screen-home__rs-col">
 									<div class="screen-homers-from-to">
@@ -113,11 +141,12 @@
 										<span class="screen-home__rs-arrow"></span>
 										<span>EDM Central Park</span>
 									</div>
-									<div class="screen-home__rs-date">05 / 12 / 2023</div>
+									<div class="screen-home__rs-date" id="recent-return-date"></div>
 								</li>
 							</ul>
 						</div>
 					</div>
+					
 				</div>
 			</section>
 		</div>
@@ -154,3 +183,4 @@
 		</section>
 	</main>
 </div>
+<script src="js/calendar.js"></script>
